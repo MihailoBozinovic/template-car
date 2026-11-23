@@ -1,0 +1,41 @@
+{
+  "name": "template-car",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Template sajta za perionice, detailing studije, tehnički pregled, vulkanizere i auto servise — React + Vite + Tailwind, sa prerenderom za SEO.",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/provera.mjs --blago && vite build && vite build --ssr src/entry-server.jsx --outDir .ssr && node scripts/prerender.mjs",
+    "preview": "vite preview --port 4173",
+    "provera": "node scripts/provera.mjs",
+    "slike": "node scripts/slike.mjs"
+  },
+  "dependencies": {
+    "@fontsource/archivo": "^5.2.5",
+    "@fontsource/barlow-condensed": "^5.2.5",
+    "@fontsource/bebas-neue": "^5.2.5",
+    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/manrope": "^5.3.0",
+    "@fontsource/montserrat": "^5.2.5",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@fontsource/work-sans": "^5.2.5",
+    "lenis": "^1.3.27",
+    "lucide-react": "^0.460.0",
+    "maplibre-gl": "^5.24.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}

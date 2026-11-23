@@ -1,0 +1,254 @@
+{
+  "/slike/balansiranje.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/dijagnostika.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/enterijer.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/farovi.webp": {
+    "w": 3840,
+    "h": 2880,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/felna.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/folija.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/gume-montaza.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/gume-stalak.webp": {
+    "w": 3840,
+    "h": 5748,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/kapi.webp": {
+    "w": 3840,
+    "h": 4800,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/keramika.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/kljucevi.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/kocnice.webp": {
+    "w": 3840,
+    "h": 2565,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/kombi.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/koza.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/lift.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/mehanicar.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/motor-bicikl.webp": {
+    "w": 3840,
+    "h": 5868,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/motor.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/poliranje.webp": {
+    "w": 3840,
+    "h": 1675,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/pranje-pena.webp": {
+    "w": 3840,
+    "h": 3840,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/pranje-rucno.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/radionica.webp": {
+    "w": 3840,
+    "h": 1938,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/servis-ulje.webp": {
+    "w": 3840,
+    "h": 2560,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/sjaj.webp": {
+    "w": 3840,
+    "h": 2400,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/studio.webp": {
+    "w": 3840,
+    "h": 5120,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/susenje.webp": {
+    "w": 3840,
+    "h": 5120,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/tabla.webp": {
+    "w": 3840,
+    "h": 2159,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  "/slike/tehnicki.webp": {
+    "w": 3840,
+    "h": 5760,
+    "varijante": [
+      640,
+      1280,
+      1920
+    ]
+  }
+}

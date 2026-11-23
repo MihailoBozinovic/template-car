@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="sr" data-ssr-html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FFFCF5">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/ikona-180.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--head-->
+    <!--tema-->
+    <script>
+        /* Pre prvog iscrtavanja: oznaka da JS radi (animacije pojavljivanja) i,
+           u demo režimu, tema iz biraca (?tema= ili zapamćena) — bez treptaja. */
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            var T = window.__TEME__;
+            if (!T) return;
+            try {
+                var id = new URLSearchParams(location.search).get('tema') || localStorage.getItem('tema.pregled.v1');
+                var t = id && T[id];
+                if (!t) return;
+                var s = document.getElementById('tema');
+                if (s) s.textContent = t.css;
+                for (var k in t.atr) d.setAttribute(k, t.atr[k]);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+    <div id="app" data-ssr-app><!--app--></div>
+    <script type="module" src="/src/entry-client.jsx"></script>
+</body>
+</html>

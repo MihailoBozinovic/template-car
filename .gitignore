@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.ssr/
+.DS_Store
+*.log
+slike-izvor/
+spisak-salona/
+alati/istrazivanje/izlaz/

@@ -1,0 +1,49 @@
+# Demo sajt na GitHub Pages: svaki push na main pravi i objavljuje sajt.
+# Adresa: https://<korisnik>.github.io/<repo>/ — podfolder i domen se računaju
+# sami iz imena repo-a, pa radi i u kopiji template-a pod drugim imenom.
+name: Objava demo sajta
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build za podfolder repo-a
+        run: |
+          OWNER="${GITHUB_REPOSITORY_OWNER,,}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          if [ "${REPO,,}" = "${OWNER}.github.io" ]; then BAZA=/; else BAZA="/${REPO}/"; fi
+          BAZA="$BAZA" VITE_DOMEN="https://${OWNER}.github.io" npm run build
+          touch dist/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.objava.outputs.page_url }}
+    steps:
+      - id: objava
+        uses: actions/deploy-pages@v4
